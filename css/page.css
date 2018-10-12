@@ -1,0 +1,656 @@
+#page {
+	width: 100%;
+}
+
+.section {
+	background-size: cover;
+	background-color: #000;
+	width: auto;
+	height: 100vh;
+	position: relative;
+	overflow: auto;
+}
+
+.inner {
+	position: relative;
+	width: 820px;
+	height: 100%;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main {
+	position: absolute;
+	top: 30px;
+	left: -100px;
+	cursor: pointer;
+	display: none;
+}
+
+.button {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 2pt;
+	cursor: pointer;
+}
+
+#top_contact {
+	position: absolute;
+	top: 30px;
+	right: -100px;
+}
+
+#content_us {
+	position: absolute;
+	bottom: 112px;
+	right: -100px;
+	width: 130px;
+	cursor: pointer;
+}
+
+#logo_cover {
+	position: absolute;
+	width: 690px;
+	height: 200px;
+	margin: auto;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	top: 0px;
+}
+
+#logo_cover img {
+	width: 100%;
+}
+
+.us {
+	float: right;
+}
+
+.line_button {
+	width: 23px;
+	border-top: 2px solid #fff;
+	position: absolute;
+	top: 8px;
+	margin: auto;
+	float: left;
+}
+
+#text_juego {
+	position: absolute;
+	bottom: 0px;
+	left: -100px;
+	border-left: 2px solid #fff;
+	padding-left: 5px;
+	height: 200px;
+}
+
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #e9c24e;
+	font-weight: 200;
+}
+
+.text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	width: 275px;
+}
+
+.mean-nav ul {
+	padding-top: 30px;
+}
+
+.space {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #e9c24e;
+	letter-spacing: 2pt;
+}
+
+.main_mobile {
+	margin: 10px 20px;
+	cursor: pointer;
+	list-style: none;
+}
+
+#content {
+	padding-top: 30px;
+	height: auto;
+}
+
+#content_page_title {
+	position: absolute;
+	left: -100px;
+	top: -200px;
+}
+
+.x_title {
+	background-image: url(../images/x.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin-right: 20px;
+}
+
+#content_title_text {
+	float: right;
+}
+
+#title_page {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 42px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+#subtitle_page {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	color: #fff;
+}
+
+#content_article {
+	width: 100%;
+	margin: auto;
+	margin-top: 200px;
+}
+
+.middle {
+	margin: 0px 7%;
+}
+
+.background_article {
+	width: 235px;
+	height: 315px;
+	float: left;
+	background-color: #fff;
+	border-radius: 6%;
+	position: relative;
+	margin-bottom: 7%;
+}
+
+.image_article {
+	width: 89%;
+	height: 93%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	border: 3px solid #000;
+	border-radius: 18px;
+}
+
+.image_article img {
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+}
+
+.diagonal {
+	position: absolute;
+	left: 5px;
+	bottom: -3px;
+	width: 96%;
+	height: 16%;
+}
+
+.diagonal img {
+	width: 100%;
+	height: 85%;
+}
+
+.article_text_content {
+	width: 211px;
+	position: absolute;
+	left: 12px;
+	top: 11px;
+	right: 0px;
+	margin: auto;
+}
+
+.article_title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #e9c24e;
+	font-weight: 700;
+}
+
+.article_subtitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.ver {
+	background-color: #e9c24e;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	z-index: 99999;
+	line-height: 75px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1pt;
+	display: none;
+	cursor: pointer;
+}
+
+.icon {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 999999;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.app {
+	background-image: url(../images/iconapp.png);
+}
+
+.branding {
+	background-image: url(../images/iconbranding.png);
+}
+
+.web {
+	background-image: url(../images/iconweb.png);
+}
+
+.desk {
+	background-image: url(../images/icondesk.png);
+}
+
+#complement_coca {
+	width: 112px;
+	height: 354px;
+	position: absolute;
+	left: -115px;
+	top: -155px;
+	background-image: url(../images/flechalarga.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+#complement_fifa {
+	width: 196px;
+	height: 73px;
+	position: absolute;
+	left: 110px;
+	top: -50px;
+	background-image: url(../images/frase1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+#complement_chivas {
+	width: 116px;
+	height: 92px;
+	position: absolute;
+	left: -65px;
+	top: -40px;
+	background-image: url(../images/frase2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+#complement_nfl {
+	width: 101px;
+	height: 90px;
+	position: absolute;
+	right: -110px;
+	top: 90px;
+}
+
+#circle_nfl {
+	width: 54%;
+	height: 60%;
+	background-image: url(../images/elipse.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	margin-bottom: 10%;
+}
+
+#text_nfl {
+	width: 100%;
+	height: 30%;
+	background-image: url(../images/agencia_oficial.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+#complement_beis {
+	width: 122px;
+	height: 98px;
+	position: absolute;
+	right: -70px;
+	top: -40px;
+	background-image: url(../images/frase3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#complement_wwe {
+	width: 174px;
+	height: 73px;
+	position: absolute;
+	right: -70px;
+	top: -35px;
+	background-image: url(../images/frase4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#footer {
+	height: 200px;
+}
+
+#img_footer {
+	width: 120px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#img_footer img {
+	width: 100%;
+}
+
+.content_title_section {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 100%;
+	height: 400px;
+}
+
+.line_title_section {
+	width: 50px;
+	height: 5px;
+	border-top: 5px solid #e9c24e;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+.title_section {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 114px;
+	color: #fff;
+	font-weight: 900;
+	width: 695px;
+	margin: auto;
+}
+
+.subtitle_section {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+
+.logo_section {
+	background-image: url(../images/logo_mini_bc.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	top: 30px;
+}
+
+.left_section {
+	background-image: url(../images/left.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50px;
+	top: 30px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1055px) {
+	#logo_cover {
+		width: 100%;
+	}
+
+	#logo_cover img {
+		width: 100%;
+	}
+
+	.inner {
+		width: 534px;
+	}
+
+	#content_title_text {
+		width: 550px;
+	}
+
+	#title_page {
+		font-size: 41px;
+	}
+
+	.background_article {
+		width: 160px;
+		height: 220px;
+		margin-bottom: 7%;
+	}
+
+	.middle {
+		margin: 0px 5%;
+	}
+
+	#complement_coca {
+		top: -195px;
+	}
+
+	#complement_fifa {
+		left: 45px;
+		top: -30px;
+	}
+
+	#complement_chivas {
+		left: -45px;
+		top: -30px;
+	}
+
+	#complement_beis {
+		right: -50px;
+		top: -30px;
+	}
+
+	#complement_wwe {
+		top: -30px;
+	}
+
+	.diagonal {
+		left: 0px;
+		width: 100%;
+		height: 35%;
+	}
+
+	.diagonal img {
+		height: 94%;
+		border-radius: 7px;
+	}
+
+	.article_text_content {
+		width: 161px;
+		left: 4px;
+		top: 25px;
+	}
+
+	.article_title {
+		font-size: 12px;
+		width: 100%;
+	}
+
+	.article_subtitle {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#content_us, #top_contact {
+		display: none;
+	}
+
+	.main {
+		display: block;
+	}
+
+	.inner {
+		width: 337px;
+	}
+
+	.middle {
+		margin-right: 0px;
+	}
+
+	.background_article {
+		margin-bottom: 12%;
+	}
+
+	#rexona {
+		margin-right: 5%;
+	}
+
+	#chivas {
+		margin-right: 5%;
+		margin-left: 0px;
+	}
+
+	.logo_section {
+		right: 10px;
+	}
+
+	.left_section {
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.inner {
+		width: 90%;
+	}
+
+	.main, #text_juego {
+		left: 0px;
+	}
+
+	#content_page_title {
+		left: 0px;
+	}
+
+	#content_title_text {
+    	width: 213px;
+	}
+
+	#title_page {
+    	font-size: 28px;
+	}
+
+	#subtitle_page {
+		font-size: 15px;
+	}
+
+	.background_article {
+		float: none;
+		margin: 0px auto;
+		margin-bottom: 15%;
+	}
+
+	#complement_coca {
+	    width: 85px;
+	    height: 300px;
+	    position: absolute;
+	    left: -80px;
+	}
+
+	#rexona, #chivas {
+		margin: 0px auto;
+		margin-bottom: 12%;
+	}
+
+	#complement_nfl {
+	    width: 70px;
+	    height: 70px;
+	    right: -75px;
+	}
+
+	#complement_fifa {
+		left: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

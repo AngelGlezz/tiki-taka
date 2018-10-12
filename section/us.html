@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900|Open+Sans:300,400,600" rel="stylesheet">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/us.css">
+		<link rel="stylesheet" type="text/css" href="../css/page.css">
+		<link rel="stylesheet" type="text/css" href="../css/mobMenu.css">
+		<script type="text/javascript" src="../js/page.js"></script>
+		<script type="text/javascript" src="../js/us.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+  		<link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+		<style>
+			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border: 0 none;
+				font-size: 100%;
+				margin: 0;
+				outline: 0 none;
+				padding: 0;
+				vertical-align: baseline;
+				width: auto;
+			}  
+		</style>
+	</head>
+	<body>
+		<div id="pages">
+			<div id="cover_us">
+				<div class="inner">
+					<div class="content_title_section">
+						<div class="title_section_us">NOSOTROS</div>
+						<div class="line_title_section"></div>
+						<div class="subtitle_section_us">
+							Somos un estudio creativo que desborda innovación en el deporte, revoluciona el lifestyle y cautiva a los fans en la tribuna, en las redes sociales y en su vida diaria. Somos un estudio creativo que desborda innovación en el deporte, revoluciona el lifestyle y cautiva a los fans en la tribuna, en las redes sociales y en su vida diaria.
+						</div>
+					</div>
+				</div>
+				<div class="logo_section"></div>
+				<a class="left_section" href="/index.html"></a>
+			</div>
+			<div id="content_personal">
+				<div class="inner">
+					<div id="content_title_personal">
+						<div class="x_title"></div>
+						<div id="title_personal">Conoce a nuestra gente creativa</div>
+					</div>
+				</div>
+				<div id="content_carousel">
+					<ul id="content_item" class="autoplay">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/slick.min.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function(){
+                console.log("slide");
+                $('.autoplay').slick({
+                    variableWidth: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    centerMode: true,
+                    pauseOnHover: false
+                });
+            });
+        </script>
+	</body>
+</html>
