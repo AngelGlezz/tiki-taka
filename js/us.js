@@ -5,7 +5,7 @@ var personal = [
         title : "Diseñador UX/UI"
     },
     {
-        picture : "a.png",
+        picture : "b.png",
         name : "Martin León",
         title : "Diseñador UX/UI"
     },
@@ -15,7 +15,7 @@ var personal = [
         title : "Diseñador UX/UI"
     },
     {
-        picture : "a.png",
+        picture : "b.png",
         name : "Martin León",
         title : "Diseñador UX/UI"
     },
@@ -25,7 +25,7 @@ var personal = [
         title : "Diseñador UX/UI"
     },
     {
-        picture : "a.png",
+        picture : "b.png",
         name : "Martin León",
         title : "Diseñador UX/UI"
     }

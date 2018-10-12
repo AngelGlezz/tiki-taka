@@ -141,6 +141,10 @@
 	.subtitle_section_us {
 	    font-size: 16px;
 	}
+
+	.item_back {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 373px) {
