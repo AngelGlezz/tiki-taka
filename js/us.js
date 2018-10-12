@@ -1,33 +1,33 @@
 var personal = [
     {
         picture : "a.png",
-        name : "Bobbi Brown",
-        title : "Diseño"
+        name : "Martin León",
+        title : "Diseñador UX/UI"
     },
     {
         picture : "a.png",
-        name : "Bobbi Brown",
-        title : "Diseño"
+        name : "Martin León",
+        title : "Diseñador UX/UI"
     },
     {
         picture : "a.png",
-        name : "Bobbi Brown",
-        title : "Diseño"
+        name : "Martin León",
+        title : "Diseñador UX/UI"
     },
     {
         picture : "a.png",
-        name : "Bobbi Brown",
-        title : "Diseño"
+        name : "Martin León",
+        title : "Diseñador UX/UI"
     },
     {
         picture : "a.png",
-        name : "Bobbi Brown",
-        title : "Diseño"
+        name : "Martin León",
+        title : "Diseñador UX/UI"
     },
     {
         picture : "a.png",
-        name : "Bobbi Brown",
-        title : "Diseño"
+        name : "Martin León",
+        title : "Diseñador UX/UI"
     }
 ]
 
