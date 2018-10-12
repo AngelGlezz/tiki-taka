@@ -40,9 +40,12 @@ $(document).ready(function(){
 
         $(".item_personal").mouseenter(function(){
             $(this).find(".item_back").show();
-            console.log("enter");
         });
-        
+
+        $(".item_personal").mouseleave(function(){
+            $(this).find(".item_back").hide();
+        });
+
         return i;
     }
 
