@@ -252,10 +252,18 @@ a {
 	font-weight: 700;
 }
 
+.background_article a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+}
+
 .article_subtitle {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
+	color: #000;
 }
 
 .ver {
