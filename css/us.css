@@ -1,7 +1,73 @@
-#cover_us {
+.inner_section {
+	position: relative;
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	z-index: 0;
+}
+
+.cover_section {
 	width: 100%;
 	height: 100vh;
 	background-color: #000;
+}
+
+.cover_yellow {
+	width: 100%;
+	height: 100vh;
+	background-color: #e9c24e;
+}
+
+.content_title_comp {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 100%;
+	height: 300px;
+}
+
+.line_title_section {
+	width: 50px;
+	height: 5px;
+	border-top: 5px solid #e9c24e;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+.line_black {
+	border-top: 5px solid #000;
+}
+
+.logo_section {
+	background-image: url(../images/logo_mini_bc.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	top: 30px;
+}
+
+.logo_black {
+	background-image: url(../images/logo_mini_ng.png);
+}
+
+.left_section {
+	background-image: url(../images/left.png);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50px;
+	top: 30px;
+	cursor: pointer;
 }
 
 .title_section_us {
@@ -9,8 +75,9 @@
 	font-size: 114px;
 	color: #fff;
 	font-weight: 900;
-	width: 695px;
+	width: 100%;
 	margin: auto;
+	text-align: center;
 }
 
 .subtitle_section_us {
@@ -69,6 +136,8 @@
 .item_back {
 	background-color: #fff;
 	border-radius: 8px;
+	-moz-border-radius: 8px;
+     -webkit-border-radius: 8px;
 	position: absolute;
 	width: 100%;
 	top: 250px;
@@ -107,35 +176,612 @@
 	text-align: center;
 }
 
+.img_cover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+#cover_coca {
+	width: 800px;
+	height: 400px;
+	background-image: url(../images/coca/cocaprincipal.png);
+	bottom: -35px;
+}
+
+#cover_nfl {
+	width: 800px;
+	height: 400px;
+	background-image: url(../images/nfl/nflprincipal.jpg);
+	bottom: -10px;
+	-webkit-box-shadow: 0px 5px 8px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 8px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 8px -3px rgba(0,0,0,0.75);
+}
+
+#cover_pats {
+	width: 800px;
+	height: 400px;
+	background-image: url(../images/pats/patsprincipal.png);
+	bottom: -40px;
+}
+
+#cover_sky {
+	width: 800px;
+	height: 400px;
+	background-image: url(../images/sky/skyprincipal.png);
+	bottom: -25px;
+}
+
+#cover_tecate {
+	width: 600px;
+	height: 400px;
+	background-image: url(../images/tecate/Beisprincipal.png);
+	bottom: -25px;
+}
+
+#cover_chivas {
+	width: 600px;
+	height: 350px;
+	background-image: url(../images/chivas/chivasprincipal.png);
+	bottom: -25px;
+}
+
+.content_1 {
+	background-color: #FBFBFB;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+	padding-top: 120px;
+	overflow: hidden;
+}
+
+#content_1_pats {
+	height: 70vh;
+}
+
+.content_2 {
+	background-image: url(../images/textura.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 65vh;
+	padding-top: 120px;
+	overflow: hidden;
+}
+
+.content_3 {
+	background-color: #FBFBFB;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 250px;
+	overflow: hidden;
+}
+
+#content_nfl_3 {
+	height: 135vh;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#content_sky_3 {
+	height: auto;
+	padding-bottom: 0px;
+}
+
+.content_right {
+	width: 45%;
+	float: left;
+}
+
+.content_left {
+	width: 52%;
+	float: left;
+	margin-right: 25px;
+	margin-top: 100px;
+}
+
+.mark_x {
+	background-image: url(../images/x.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.title_left {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 52px;
+	color: #222222;
+	margin-top: 55px;
+}
+
+.text_left {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	color: #7c7c7c;
+	margin-top: 8px;
+}
+
+#title_nfl {
+	font-size: 40px;
+}
+
+.img_right {
+	position: relative;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 50px;
+	left: -50px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#logo_coca {
+	background-image: url(../images/coca/logococa.png);
+	width: 115px;
+	height: 150px;
+}
+
+#logo_nfl {
+	background-image: url(../images/nfl/logonfl.png);
+	width: 115px;
+	height: 150px;
+}
+
+#logo_pats {
+	background-image: url(../images/pats/logopats.png);
+	width: 180px;
+	height: 80px;
+	left: -95px;
+}
+
+#logo_sky {
+	background-image: url(../images/sky/logosky.png);
+	width: 160px;
+	height: 80px;
+	left: -70px;
+}
+
+#logo_tecate {
+	background-image: url(../images/tecate/juanbeisbollogo.png);
+	width: 160px;
+	height: 80px;
+	left: -70px;
+}
+
+#logo_chivas {
+	background-image: url(../images/chivas/chivaslogo.png);
+	width: 80px;
+	height: 80px;
+	left: -40px;
+}
+
+#img_coca {
+	background-image: url(../images/coca/coca1.png);
+}
+
+#img_nfl {
+	background-image: url(../images/nfl/nfl1.jpg);
+}
+
+#img_pats {
+	background-image: url(../images/pats/pats2.jpg);
+	height: 700px;
+}
+
+#img_sky {
+	background-image: url(../images/sky/sky1.jpg);
+	height: 700px;
+}
+
+#img_tecate_1 {
+	background-image: url(../images/tecate/Beis2.jpg);
+	height: 800px;
+}
+
+#img_tecate_2 {
+	background-image: url(../images/tecate/Beis1.jpg);
+	height: 750px;
+}
+
+#img_chivas {
+	background-image: url(../images/chivas/chivas1.jpg);
+	height: 750px;
+}
+
+.text_2 {
+	width: 440px;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #7c7c7c;
+	z-index: 1;
+	margin-left: 100px;
+	line-height: 24px;
+}
+
+#txt_nfl {
+	width: 477px;
+}
+
+#txt_pats {
+	width: 602px;
+}
+
+#txt_sky {
+	width: 570px;
+}
+
+#txt_tecate {
+	width: 610px;
+}
+
+#txt_chivas {
+	width: 625px;
+}
+
+.num_content {
+	position: absolute;
+	left: -235px;
+	top: -100px;
+	z-index: -1;
+}
+
+.number {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 290px;
+	color: #E5B37C;
+}
+
+.circle {
+	background-image: url(../images/circle.png);
+	position: absolute;
+	top: 15px;
+	right: 110px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	width: 50px;
+	height: 50px;
+}
+
+.img_content_2 {
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	-webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+
+#present_coca {
+	background-image: url(../images/coca/coca3.jpg);
+}
+
+#present_nfl {
+	background-image: url(../images/nfl/nfl3.jpg);
+}
+
+#present_pats {
+	background-image: url(../images/pats/pats3.jpg);
+}
+
+#present_sky {
+	background-image: url(../images/sky/sky3.jpg);
+}
+
+#present_tecate {
+	background-image: url(../images/tecate/Beis3_r.jpg);
+}
+
+#present_chivas {
+	background-image: url(../images/chivas/chivas2.jpg);
+}
+
+.content_demo {
+	width: 95%;
+	margin: auto;
+}
+
+.demo_middle {
+	margin: 0px 10px;
+}
+
+.img_demo_coca {
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+	-webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+
+.img_demo_nfl {
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+	-webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+
+.img_demo_sky {
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+	-webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+
+.img_demo_tecate {
+	width: 30%;
+	float: left;
+	margin-top: 10px;
+	-webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+
+.x2 {
+	width: 47%;
+	margin: 1.5%;
+}
+
+.x3_middle {
+	margin: 0 1.5%;
+	margin-top: 1%;
+}
+
+.x3 {
+	width: 32.3%;
+	margin-top: 0px;
+}
+
+.x2_sky {
+	width: 446px;
+	height: 446px;
+	margin: 1.5%;
+}
+
+.x2_sky img {
+	width: 100%;
+	height: 100%;
+}
+
+.x3_sky {
+	width: 307px;
+	height: 580px;
+}
+
+.x3_sky img {
+	width: 100%;
+	height: 100%;
+}
+
+.x2_tecate {
+	width: 446px;
+	height: 446px;
+	margin: 1.5%;
+}
+
+.x2_tecate img {
+	width: 100%;
+	height: 100%;
+}
+
+.x3_tecate {
+	width: 307px;
+	height: 311px;
+	margin-top: 0px;
+}
+
+.x3_tecate img {
+	width: 100%;
+	height: 100%;
+}
+
+.img_demo_coca img {
+	width: 100%;
+}
+
+.img_demo_nfl img {
+	width: 100%;
+}
+
+.img_demo_tecate img {
+	width: 100%;
+	height: 100%;
+}
+
+#content_tecate_3 {
+	height: auto;
+	padding-bottom: 50px;
+}
+
 @media screen and (max-width: 1055px) {
+	.inner_section {
+		width: 765px;
+	}
+
 	#content_title_personal {
 	    width: 100%;
+	}
+
+	#cover_nfl {
+		width: 96%;
+		height: 300px;
+	}
+
+	#cover_sky {
+		width: 96%;
+		height: 340px;
+	}
+
+	#text_nfl {
+		font-size: 22px;
+		width: 370px;
 	}
 
 	#title_personal {
 	    width: 82%;
 	}
 
+	#title_chivas {
+		font-size: 42px;
+	}
+
 	.title_section_us {
 		width: 100%;
-		font-size: 80px;
 		text-align: center;
 	}
 
 	.subtitle_section_us {
 		font-size: 19px;
 	}
+
+	#cover_coca {
+	    width: 100%;
+	    height: 350px;
+	    bottom: -30px;
+	}
+
+	.content_1 {
+		height: 65vh;
+	}
+
+	.content_left {
+		margin-top: 0px;
+	}
+
+	#content_left_pats {
+		margin-top: 50px;
+	}
+
+	#title_coca {
+		font-size: 33px;
+	}
+
+	#text_coca {
+		font-size: 20px;
+	}
+
+	.content_right {
+		width: 43%;
+	}
+
+	#img_coca, #img_chivas {
+		height: 590px;
+	}
+
+	#img_pats, #img_sky {
+		height: 550px;
+	}
+
+	#img_tecate_1, #img_tecate_2 {
+		height: 580px;
+	}
+
+	.text_2 {
+		margin: auto;
+		float: none;
+	}
+
+	#present_coca, #present_sky {
+		width: 95%;
+		height: 350px;
+	}
+
+	#present_nfl, #present_tecate, #present_chivas {
+		width: 96%;
+	}
+
+	.x2_sky {
+		width: 341px;
+		height: 341px;
+	}
+
+	.x3_sky {
+	    width: 234px;
+	    height: 500px;
+	    margin-top: 1.5%;
+	}
+
+	.x2_tecate {
+		width: 341px;
+		height: 341px;
+	}
+
+	.x3_tecate {
+		width: 234px;
+		height: 234px;
+	}
+
+	#logo_coca {
+		width: 90px;
+		left: -20px;
+		height: 120px;
+	}
+
+	.img_demo_coca {
+		width: 32.4%;
+	}
 }
 
 @media screen and (max-width: 767px) {
+	.inner_section {
+		width: 560px;
+	}
+
 	#title_personal {
 	    width: 76%;
 	    font-size: 28px;
 	    margin-top: 0px;
 	}
 
-	.title_section_us {
-		font-size: 55px;
+	.content_title_comp {
+		height: 200px;
+	}
+
+	#content_title_sky {
+		top: -100px;
+	}
+
+	#content_1_pats {
+	    height: 60vh;
 	}
 
 	.subtitle_section_us {
@@ -145,16 +791,428 @@
 	.item_back {
 		display: block;
 	}
-}
 
-@media screen and (max-width: 373px) {
-	#title_personal {
-	    width: 73%;
-	    font-size: 22px;
+	#title_cover_coca {
+		font-size: 87px;
 	}
 
-	.title_section_us {
-		font-size: 47px;
+	#title_cover_pats {
+		font-size: 100px;
+	}
+
+	#cover_coca {
+	    height: 300px;
+	}
+
+	#cover_pats {
+		width: 100%;
+		height: 300px;
+	}
+
+	#cover_tecate {
+		width: 400px;
+		height: 300px;
+	}
+
+	#cover_chivas {
+		width: 100%;
+		height: 300px;
+	}
+
+	#img_nfl, #img_pats, #img_chivas {
+		height: 500px;
+	}
+
+	#img_sky {
+	    height: 450px;
+	}
+
+	#title_tecate {
+		font-size: 46px;
+	}
+
+	#title_chivas {
+	    font-size: 30px;
+	}
+
+	#text_chivas {
+		font-size: 18px;
+	}
+
+	#logo_nfl {
+		width: 70px;
+		height: 100px;
+		top: 15px;
+		left: -36px;
+	}
+
+	#logo_sky {
+		width: 100px;
+		height: 50px;
+		top: 30px;
+		left: -40px;
+	}
+
+	#logo_tecate {
+	    width: 120px;
+	    height: 60px;
+	    left: -40px;
+	}
+
+	.img_demo_coca {
+	    width: 32%;
+	}
+
+	#present_coca {
+	    height: 300px;
+	}
+
+	#present_nfl {
+		height: 300px;
+	}
+
+	.logo_section {
+		right: 10px;
+	}
+
+	.left_section {
+		left: 10px;
+	}
+
+	#title_nfl {
+    	font-size: 30px;
+	}
+
+	#title_pats {
+		font-size: 40px;
+	}
+
+	#title_sky {
+		font-size: 44px;
+	}
+
+	#text_nfl {
+	    font-size: 20px;
+	    width: 295px;
+	}
+
+	#text_pats {
+		font-size: 18px;
+	}
+
+	#text_tecate {
+		font-size: 19px;
+	}
+
+	#content_nfl_3 {
+		height: 90vh;
+	}
+
+	#present_pats {
+		width: 100%;
+		height: 300px;
+	}
+
+	#present_sky {
+		height: 280px;
+	}
+
+	#present_tecate, #present_chivas {
+		width: 96%;
+		height: 300px;
+	}
+
+	#txt_pats, #txt_sky, #txt_tecate, #txt_chivas {
+		width: 100%;
+	}
+
+	.x2_sky {
+		width: 250px;
+		height: 250px;
+	}
+
+	.x3_sky {
+	    width: 172px;
+	    height: 350px;
+	}
+
+	.x2_tecate {
+	    width: 250px;
+	    height: 250px;
+	}
+
+	.x3_tecate {
+	    width: 172px;
+	    height: 172px;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.inner_section {
+		width: 410px;
+	}
+
+	#cover_coca {
+	    height: 250px;
+	    bottom: -20px;
+	}
+
+	#cover_nfl {
+		height: 230px;
+	}
+
+	#cover_pats, #cover_chivas {
+		height: 250px;
+	}
+
+	#cover_sky {
+		height: 240px;
+	}
+
+	#title_cover_coca {
+	    font-size: 63px;
+	}
+
+	#title_cover_pats {
+	    font-size: 75px;
+	}
+
+	#title_cover_tecate {
+		font-size: 98px;
+	}
+
+	#title_cover_chivas {
+		font-size: 100px;
+	}
+
+	.content_title_comp {
+		height: 200px;
+	}
+
+	#content_left_nfl, #content_left_pats, #content_left_sky, #content_left_tecate_1, #content_left_tecate_2, #content_left_chivas {
+		width: 90%;
+		margin: 10px auto;
+		float: none;
+	}
+
+	#content_right_nfl, #content_right_pats, #content_right_sky, #content_right_tecate_1, #content_right_tecate_2, #content_right_chivas {
+		width: 70%;
+		margin: 10px auto;
+		float: none;
+	}
+
+	.content_1 {
+		padding-top: 60px;
+		height: 90vh;
+	}
+
+	#content_1_pats {
+	    height: 110vh;
+	}
+
+	#content_1_sky, #content_1_chivas {
+		padding-top: 0px;
+	}
+
+	#content_1_tecate {
+		height: auto;
+		padding-top: 0px;
+	}
+
+	#text_coca {
+	    font-size: 14px;
+	}
+
+	#title_coca {
+	    font-size: 25px;
+	}
+
+	#title_nfl {
+	    font-size: 35px;
+	}
+
+	#title_sky {
+	    font-size: 32px;
+	}
+
+	#text_sky {
+		font-size: 18px;
+	}
+
+	#img_coca {
+	    height: 420px;
+	}
+
+	#logo_pats {
+	    width: 100px;
+	    height: 50px;
+	    left: -45px;
+	}
+
+	.text_2 {
+		width: 100%;
+		font-size: 15px;
+	}
+
+	#present_coca, #present_sky, #present_tecate, #present_chivas {
+	    height: 230px;
+	}
+
+	#present_nfl {
+	    height: 240px;
+	}
+
+	.img_demo_coca {
+	    width: 31.5%;
+	}
+
+	.img_demo_sky {
+		width: 310px;
+		height: 310px;
+		margin: 20px auto;
+		float: none;
+	}
+
+	.img_demo_tecate {
+		width: 370px;
+		height: 370px;
+		margin: 10px auto;
+		float: none;
+	}
+
+	.content_3 {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+
+	.x3_sky {
+		height: 480px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.inner_section {
+		width: 96%;
+		margin: auto;
+	}
+
+	#cover_nfl {
+	    height: 190px;
+	}
+
+	#cover_pats, #cover_chivas {
+	    height: 180px;
+	}
+
+	#cover_sky {
+	    height: 150px;
+	    bottom: -10px;
+	}
+
+	#cover_tecate {
+		width: 300px;
+		height: 200px;
+		bottom: -10px;
+	}
+
+	#title_cover_coca {
+	    font-size: 47px;
+	}
+
+	#title_cover_pats {
+	    font-size: 57px;
+	}
+
+	#title_cover_tecate {
+	    font-size: 74px;
+	}
+
+	#title_cover_chivas {
+	    font-size: 75px;
+	}
+
+	.content_1 {
+		padding-top: 0px;
+		height: 100vh;
+	}
+
+	.content_right, .content_left {
+		width: 90%;
+		float: none;
+		margin: auto;
+	}
+
+	#img_coca {
+	    height: 550px;
+	    margin-top: 30px;
+	}
+
+	#img_nfl, #img_tecate_1, #img_tecate_2, #img_chivas {
+	    height: 400px;
+	}
+
+	#title_coca {
+	    font-size: 28px;
+	}
+
+	#title_nfl {
+    	font-size: 30px;
+	}
+
+	#title_tecate {
+	    font-size: 42px;
+	}
+
+	#title_chivas {
+	    font-size: 24px;
+	}
+
+	#text_coca {
+	    font-size: 14px;
+	    margin-top: 0px;
+	}
+
+	#text_chivas {
+	    font-size: 16px;
+	}
+
+	#text_nfl,#txt_nfl {
+		width: 100%;
+	}
+
+	#present_coca, #present_tecate, #present_chivas {
+	    height: 180px;
+	}
+
+	#present_nfl {
+	    height: 200px;
+	}
+
+	#present_pats {
+		height: 200px;
+	}
+
+	#present_sky {
+		height: 190px;
+	}
+
+	.img_demo_coca {
+		width: 29%;
+		margin: 5px 5px;
+	}
+
+	.img_demo_nfl, .img_demo_sky {
+		width: 100%;
+		margin: 10px 0px;
+	}
+
+	.img_demo_tecate {
+	    width: 290px;
+	    height: 290px;
+	}
+
+	#content_nfl_3 {
+		height: auto;
 	}
 }
 

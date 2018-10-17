@@ -21,4 +21,13 @@ $(document).ready(function(){
 			"height": height
 		})
 	});
+
+	$("#fifa").off('mouseleave');
+	$("#fifa").off('mouseenter');
+	$("#rexona").off('mouseleave');
+	$("#rexona").off('mouseenter');
+	$("#pops").off('mouseleave');
+	$("#pops").off('mouseenter');
+	$("#wwe").off('mouseleave');
+	$("#wwe").off('mouseenter');
 });

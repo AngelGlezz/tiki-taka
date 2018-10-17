@@ -30,7 +30,7 @@ body.open-left{
 .mobile-left{
 	left:-75%;
 	transition: left 0.5s;
-	background-color: #fff;
+	background-color: #000;
 }
 .mobile-content{
 	transition: margin-left 0.5s;
