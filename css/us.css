@@ -1133,7 +1133,7 @@
 
 	.content_1 {
 		padding-top: 0px;
-		height: 100vh;
+		height: auto;
 	}
 
 	.content_right, .content_left {
@@ -1212,6 +1212,24 @@
 	}
 
 	#content_nfl_3 {
+		height: auto;
+	}
+}
+
+@media screen and (max-height: 415px) {
+	.cover_section {
+		min-height: 160vh;
+	}
+
+	.content_1, .content_2 {
+		min-height: 115vh;
+	}
+
+	.content_1 {
+		padding-top: 50px;
+	}
+
+	.content_3 {
 		height: auto;
 	}
 }
