@@ -11,6 +11,14 @@
 	overflow: auto;
 }
 
+#cover {
+	background-image: url(../images/fondohome.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	min-height: 500px;
+}
+
 .inner {
 	position: relative;
 	width: 1000px;
@@ -23,40 +31,45 @@ a {
 	text-decoration: none;
 }
 
-.main {
-	position: absolute;
-	top: 30px;
-	left: -100px;
-	cursor: pointer;
-	display: none;
+#top_bar {
+	width: 100%;
+	height: 40px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	padding: 10px 0px;
+	z-index: 99;
+	opacity: 0.8;
 }
 
-.button {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+.item_main {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	float: left;
+	margin: 0px 30px;
+	line-height: 33px;
+}
+
+.item_main a {
 	color: #fff;
-	letter-spacing: 2pt;
-	cursor: pointer;
 }
 
-#top_contact {
-	position: absolute;
-	top: 30px;
-	right: -100px;
-}
-
-#content_us {
-	position: absolute;
-	bottom: 112px;
-	right: -100px;
-	width: 130px;
-	cursor: pointer;
+#tiki_logo_tb {
+	background-image: url(../images/logo_mini_bc.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 80px;
+	height: 30px;
 }
 
 #logo_cover {
 	position: absolute;
 	width: 690px;
-	height: 200px;
+	height: 400px;
 	margin: auto;
 	right: 0px;
 	left: 0px;
@@ -68,45 +81,46 @@ a {
 	width: 100%;
 }
 
-.us {
-	float: right;
+#crea {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
-.line_button {
-	width: 23px;
-	border-top: 2px solid #fff;
-	position: absolute;
-	top: 8px;
-	margin: auto;
-	float: left;
+#crea span {
+	color: #e9c24e;
 }
 
 #text_juego {
-	position: absolute;
-	bottom: 0px;
-	left: -100px;
-	border-left: 2px solid #fff;
-	padding-left: 5px;
-	height: 200px;
-}
-
-.title {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-	color: #e9c24e;
-	font-weight: 200;
+	width: 490px;
+	height: 55px;
+	margin: 20px auto;
 }
 
 .text {
+	width: 100%;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 300;
 	color: #fff;
-	width: 275px;
+	text-align: center;
+}
+
+.line_sep {
+	border-top: 1px solid #fff;
+	width: 250px;
+	margin: 30px auto;
 }
 
 .mean-nav ul {
 	padding-top: 50px;
+}
+
+.main {
+	display: none;
 }
 
 .space {
@@ -137,6 +151,85 @@ a {
 	list-style: none;
 }
 
+#us {
+	background-image: url(../images/fondonosotros.jpg);
+	background-size: cover;
+	padding-top: 250px;
+}
+
+.creamos_content {
+	margin-bottom: 300px;
+}
+
+#content .inner .creamos_content {
+	margin-bottom: 10px;
+}
+
+.creamos_text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 44px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.creamos_text span {
+	color: #e9c24e;
+}
+
+.bullet {
+	width: 24%;
+	float: left;
+}
+
+.middle_b {
+	margin-left: 8px;
+}
+
+.img_bullet {
+	width: 110px;
+	height: 110px;
+	margin: 0px auto;
+	margin-bottom: 30px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.title_bullet {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.txt_bullet {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+}
+
+#b1 {
+	background-image: url(../images/pluma.png);
+}
+
+#b2 {
+	background-image: url(../images/pincel.png);
+}
+
+#b3 {
+	background-image: url(../images/Lapiz.png);
+}
+
+#b4 {
+	background-image: url(../images/Mouse.png);
+}
+
 #content {
 	padding-top: 30px;
 	height: auto;
@@ -146,17 +239,6 @@ a {
 	position: absolute;
 	left: -100px;
 	top: -200px;
-}
-
-.x_title {
-	background-image: url(../images/x.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	width: 55px;
-	height: 55px;
-	float: left;
-	margin-right: 20px;
 }
 
 #content_title_text {
@@ -181,11 +263,11 @@ a {
 #content_article {
 	width: 100%;
 	margin: auto;
-	margin-top: 200px;
+	margin-top: 100px;
 }
 
-.middle {
-	margin: 0px 7%;
+#fifa, #rexona, #pops, #nfl, #beis, #sky {
+	margin-left: 20px;
 }
 
 .background_article {
@@ -322,91 +404,6 @@ a {
 	background-image: url(../images/icondesk.png);
 }
 
-#complement_coca {
-	width: 112px;
-	height: 354px;
-	position: absolute;
-	left: -115px;
-	top: -155px;
-	background-image: url(../images/flechalarga.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-
-#complement_fifa {
-	width: 196px;
-	height: 73px;
-	position: absolute;
-	left: 110px;
-	top: -50px;
-	background-image: url(../images/frase1.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-
-#complement_chivas {
-	width: 116px;
-	height: 92px;
-	position: absolute;
-	left: -65px;
-	top: -40px;
-	background-image: url(../images/frase2.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-
-#complement_nfl {
-	width: 101px;
-	height: 90px;
-	position: absolute;
-	right: -110px;
-	top: 90px;
-}
-
-#circle_nfl {
-	width: 54%;
-	height: 60%;
-	background-image: url(../images/elipse.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	margin-bottom: 10%;
-}
-
-#text_nfl {
-	width: 100%;
-	height: 30%;
-	background-image: url(../images/agencia_oficial.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-
-#complement_beis {
-	width: 122px;
-	height: 98px;
-	position: absolute;
-	right: -70px;
-	top: -40px;
-	background-image: url(../images/frase3.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#complement_wwe {
-	width: 174px;
-	height: 73px;
-	position: absolute;
-	right: -70px;
-	top: -35px;
-	background-image: url(../images/frase4.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 #footer {
 	height: 200px;
 }
@@ -421,86 +418,14 @@ a {
 	width: 100%;
 }
 
-.content_title_section {
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-	margin: auto;
-	width: 100%;
-	height: 400px;
-}
-
-.line_title_section {
-	width: 50px;
-	height: 5px;
-	border-top: 5px solid #e9c24e;
-	margin: auto;
-	margin-bottom: 25px;
-}
-
-.title_section {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 114px;
-	color: #fff;
-	font-weight: 900;
-	width: 695px;
-	margin: auto;
-}
-
-.subtitle_section {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 24px;
-	color: #fff;
-	text-align: center;
-	width: 100%;
-}
-
-.logo_section {
-	background-image: url(../images/logo_mini_bc.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
-	width: 120px;
-	height: 50px;
-	position: absolute;
-	right: 50px;
-	top: 30px;
-}
-
-.left_section {
-	background-image: url(../images/left.png);
-	background-position: center;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	width: 40px;
-	height: 20px;
-	position: absolute;
-	left: 50px;
-	top: 30px;
-	cursor: pointer;
-}
 
 @media screen and (max-width: 1055px) {
-	#logo_cover {
-		width: 100%;
-	}
-
-	#logo_cover img {
+	#logo_cover, #logo_cover img, #text_juego {
 		width: 100%;
 	}
 
 	.inner {
-		width: 534px;
-	}
-
-	#content_title_text {
-		width: 550px;
-	}
-
-	#title_page {
-		font-size: 41px;
+		width: 700px;
 	}
 
 	.background_article {
@@ -511,29 +436,6 @@ a {
 
 	.middle {
 		margin: 0px 5%;
-	}
-
-	#complement_coca {
-		top: -195px;
-	}
-
-	#complement_fifa {
-		left: 45px;
-		top: -30px;
-	}
-
-	#complement_chivas {
-		left: -45px;
-		top: -30px;
-	}
-
-	#complement_beis {
-		right: -50px;
-		top: -30px;
-	}
-
-	#complement_wwe {
-		top: -30px;
 	}
 
 	.diagonal {
@@ -566,50 +468,57 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-	#content_us, #top_contact {
-		display: none;
-	}
-
 	.main {
 		display: block;
+		position: absolute;
+		top: 20px;
 	}
 
 	.inner {
-		width: 337px;
+		width: 520px;
 	}
 
-	.middle {
-		margin-right: 0px;
+	#us {
+		padding-top: 80px;
+		height: auto;
 	}
 
-	.background_article {
-		margin-bottom: 12%;
+	#content {
+		padding-top: 100px;
 	}
 
-	#rexona {
-		margin-right: 5%;
-	}
-
-	#chivas {
-		margin-right: 5%;
+	#pops, #beis {
 		margin-left: 0px;
 	}
 
-	.logo_section {
-		right: 10px;
+	#chivas {
+		margin-left: 20px;
 	}
 
-	.left_section {
-		left: 10px;
+	.creamos_content {
+	    margin-bottom: 100px;
+	}
+
+	.bullet {
+		width: 48%;
+		margin-bottom: 20px;
+	}
+
+	#mb2 {
+		margin-left: 0px;
+	}
+
+	.background_article {
+		margin-bottom: 20px;
 	}
 }
 
 @media screen and (max-width: 570px) {
 	.inner {
-		width: 90%;
+		width: 375px;
 	}
 
-	.main, #text_juego {
+	.main {
 		left: 0px;
 	}
 
@@ -630,31 +539,37 @@ a {
 	}
 
 	.background_article {
+		width: 45%;
+		float: left;
+		margin: 10px 10px;
+	}
+
+	#rexona, #coca, #chivas {
+		margin-left: 0px;
+	}
+
+	#fifa, #nfl {
+		margin-right: 0px;
+	}
+
+	#pops, #sky {
+		margin-left: 17px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.inner {
+		width: 315px;
+	}
+
+	.background_article {
+		width: 60%;
+		margin: 20px auto!important;
 		float: none;
-		margin: 0px auto;
-		margin-bottom: 15%;
 	}
 
-	#complement_coca {
-	    width: 85px;
-	    height: 300px;
-	    position: absolute;
-	    left: -80px;
-	}
-
-	#rexona, #chivas {
-		margin: 0px auto;
-		margin-bottom: 12%;
-	}
-
-	#complement_nfl {
-	    width: 70px;
-	    height: 70px;
-	    right: -75px;
-	}
-
-	#complement_fifa {
-		left: 40px;
+	.creamos_text {
+		font-size: 38px;
 	}
 }
 
