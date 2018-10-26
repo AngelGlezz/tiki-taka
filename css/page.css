@@ -1,4 +1,4 @@
-#page {
+.page {
 	width: 100%;
 }
 
@@ -31,7 +31,7 @@ a {
 	text-decoration: none;
 }
 
-#top_bar {
+.top_bar {
 	width: 100%;
 	height: 40px;
 	background-color: rgba(0,0,0,0.8);
@@ -57,13 +57,25 @@ a {
 	color: #fff;
 }
 
-#tiki_logo_tb {
+.item_main:hover {
+	border-bottom: 1px solid #e9c24e!important;
+}
+
+.item_main a:hover {
+	color: #e9c24e!important;
+}
+
+.tiki_logo_tb {
 	background-image: url(../images/logo_mini_bc.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 80px;
 	height: 30px;
+}
+
+.tiki_logo_tb:hover {
+	border-bottom: 0px!important;
 }
 
 #logo_cover {
@@ -231,7 +243,7 @@ a {
 }
 
 #content {
-	padding-top: 30px;
+	padding-top: 60px;
 	height: auto;
 }
 
@@ -418,6 +430,130 @@ a {
 	width: 100%;
 }
 
+.content_left {
+	width: 60%;
+	height: 100vh;
+	background-color: #000;
+	float: left;
+}
+
+.content_right {
+	width: 40%;
+	height: 100vh;
+	background-color: #fff;
+	float: right;
+	position: relative;
+}
+
+.content_galery {
+	width: 100%;
+	height: auto;
+	margin: 150px 0px 0px 100px;
+}
+
+.slider-for {
+	margin-bottom: 30px;
+}
+
+.slider-for div img {
+	width: 100%;
+}
+
+.slider-nav {
+	width: 80%;
+	float: left;
+}
+
+.slider-nav .slick-list .slick-track .slick-slide {
+	width: 110px!important;
+	margin: 0px 10px!important;
+}
+
+.content_info {
+	width: 270px;
+	margin: 150px auto;
+}
+
+.content_title {
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: auto;
+	margin-left: -40px;
+}
+
+.x-title {
+	background-image: url(../images/x.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	float: left;
+	margin-top: 15px;
+}
+
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	color: #000;
+	font-weight: 900;
+	margin-bottom: 30px;
+	float: left;
+}
+
+.txt_title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.line-title {
+	width: 60px;
+	border-bottom: 2px solid #e9c24e;
+	margin-bottom: 30px;
+}
+
+.txt-complement {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #000;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 1380px) {
+	.content_info {
+		float: right;
+	}
+
+	.slider-nav {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.content_galery {
+		width: 90%;
+		margin: 150px 0px 0px 70px;
+	}
+
+	.slider-nav {
+		width: 95%;
+		margin-left: -30px;
+	}
+
+	.slider-nav .slick-list {
+		height: 110px;
+		overflow: hidden;
+	}
+
+	.content_info {
+		width: 217px;
+		margin-bottom: 0px;
+	}
+}
 
 @media screen and (max-width: 1055px) {
 	#logo_cover, #logo_cover img, #text_juego {
@@ -468,6 +604,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+	#top_bar {
+		display: none;
+	}
+
 	.main {
 		display: block;
 		position: absolute;
@@ -570,6 +710,17 @@ a {
 
 	.creamos_text {
 		font-size: 38px;
+	}
+}
+
+@media screen and (max-height: 690px) {
+	#us {
+		height: auto;
+		padding-top: 50px;
+	}
+
+	.creamos_content {
+		margin-bottom: 50px;
 	}
 }
 

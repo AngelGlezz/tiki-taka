@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900|Open+Sans:300,400,600" rel="stylesheet">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/page.css">
+		<link rel="stylesheet" type="text/css" href="../css/mobMenu.css">
+		<script type="text/javascript" src="../js/page.js"></script>
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+		<style>
+			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border: 0 none;
+				font-size: 100%;
+				margin: 0;
+				outline: 0 none;
+				padding: 0;
+				vertical-align: baseline;
+				width: auto;
+			}
+
+			.fotorama__stage__shaft, .fotorama__stage__frame, .fotorama__wrap {
+				width: 100%!important;
+				z-index: 99999!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mobile-content">
+			<div class="page">
+				<div class="ui-block"></div>
+				<div class="top_bar" style="background-color: #000;">
+					<div class="item_main tiki_logo_tb"><a href="index.html"></a></div>	
+					<div class="item_main"><a href="index.html">HOME</a></div>
+					<div class="item_main"><a href="index.html#us">NOSOTROS</a></div>
+					<div class="item_main"><a href="index.html#content">PROYECTOS</a></div>
+					<div class="item_main"><a href="">CONTÁCTANOS</a></div>
+				</div>
+				<div class="content_left">
+					<div class="content_galery">
+						<div class="fotorama" data-nav="thumbs" data-loop="true" data-arrows="false" data-click="true" data-swipe="true" data-autoplay="true">
+						  	<a href="../images/sky/1_1imagensky.jpg"><img src="../images/sky/1_1psky.jpg"></a>
+  							<a href="../images/sky/1_2imagensky.jpg"><img src="../images/sky/1_2psky.jpg"></a>
+  							<a href="../images/sky/1_3imagensky.jpg"><img src="../images/sky/1_3psky.jpg"></a>
+  							<a href="../images/sky/2_1imagensky.png"><img src="../images/sky/2_1psky.jpg"></a>
+  							<a href="../images/sky/2_2imagensky.png"><img src="../images/sky/2_2psky.jpg"></a>
+  							<a href="../images/sky/3imagensky.png"><img src="../images/sky/3_1psky.jpg"></a>
+  							<a href="http://dailymotion.com/embed/video/xxgmlg?autoplay=1" data-video="true">
+						</div>
+					</div>
+				</div>
+				<div class="content_right">
+					<div class="content_info">
+						<div class="content_title">
+							<div class="x-title"></div>
+							<div class="title">SKY</div>
+						</div>
+						<div class="txt_title">Plataforma web y social media</div>
+						<div class="line-title"></div>
+						<div class="txt-complement">A los millennials no se les atrapa con los anuncios en TV abierta. Sky lo sabía pero le faltaba dar con una agenciaque supiera generar formatos para las nuevas generaciones.</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-left">
+				<nav class="mean-nav">
+	                <ul>
+	                	<li class="main_mobile"><a class="space" href="/tiki-taka/index.html">HOME</a></li>
+	                    <li class="main_mobile"><a class="space" href="/tiki-taka/section/contact.html">CONTÁCTANOS</a></li>
+	                    <li class="main_mobile"><a class="space" href="/tiki-taka/section/us.html">NOSOTROS</a></li>
+	                    <li class="main_mobile"><a class="space" href="/tiki-taka/index.html#content">PROYECTOS</a></li>
+	                    <li class="main_mobile"><a class="space index_main" href="/tiki-taka/index.html"></a></li>
+	                </ul>
+	            </nav>
+			</div>
+		</div>
+		<script type="text/javascript">
+		document.querySelector('.ui-block').addEventListener('click', function (e) {
+			e.stopPropagation();
+			e.preventDefault();
+			document.body.className = document.body.className.replace('open-left', '');
+		});
+		//OPEN MOBILE MENU
+		var menu_toggle_button = document.getElementById('mobile-nav-toggle');
+		menu_toggle_button.onclick = function() {
+			document.querySelector('body').classList.add('open-left');
+		}
+	</script>
+	</body>
+</html>
