@@ -26,17 +26,17 @@
 			<div class="page">
 				<div class="ui-block"></div>
 				<div class="top_bar">
-					<div class="item_main" id="tiki_logo_tb"><a href="index.html"></a></div>	
+					<div class="item_main tiki_logo_tb"><a href="index.html"></a></div>	
 					<div class="item_main"><a href="index.html">HOME</a></div>
 					<div class="item_main"><a href="index.html#us">NOSOTROS</a></div>
 					<div class="item_main"><a href="index.html#content">PROYECTOS</a></div>
-					<div class="item_main"><a href="">CONTÁCTANOS</a></div>
+					<div class="item_main"><a href="index.html#contact">CONTÁCTANOS</a></div>
 				</div>
 				<div id="cover" class="section">
+					<div class="mobile-header">
+						<div class="main" id="mobile-nav-toggle"><img src="images/menu.png"></div>
+					</div>
 					<div class="inner">
-						<div class="mobile-header">
-							<div class="main" id="mobile-nav-toggle"><img src="images/menu.png"></div>
-						</div>
 						<div id="logo_cover">
 							<div id="crea">CREAMOS <span>EXPERIENCIAS</span></div>
 							<img src="images/LOGOtiki.png">
@@ -210,8 +210,42 @@
 						</div>
 					</div>
 				</div>
-				<div class="section" id="footer">
-					<div id="img_footer"><img src="images/logo_mini_bc.png"></div>
+				<div class="section" id="contact">
+					<div class="inner">
+						<div class="creamos_content">
+							<div class="creamos_text">CONTÁCTANOS</span></div>
+							<div class="line_sep"></div>
+						</div>
+						<form id="form">
+							<input type="text" name="name" placeholder="*Nombre" class="data" required>
+							<input type="text" name="job" placeholder="*Empresa" class="data" required style="margin-left: 20px;">
+							<input type="mail" name="mail" placeholder="*E-mail" class="data" required>
+							<input type="tel" name="phone" placeholder="*Teléfono" class="data" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="margin-left: 20px;">
+							<textarea name="msj" placeholder="*Mensaje" class="data" id="txtarea" required></textarea>
+							<button type="button" id="button">Enviar</button>
+						</form>
+						<div id="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16138.319054601672!2d-99.1897212927966!3d19.351959786249914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff12f89096f%3A0xec6d77250f2b1c5e!2sjuanfutbol!5e0!3m2!1ses!2smx!4v1540838107017" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+						<div id="footer_info">
+							<div class="footer_item">
+								<div class="img_footer" id="phone"></div>
+								<div class="txt_footer">1234567890</div>
+							</div>
+							<div class="footer_item">
+								<div class="img_footer" id="mail"></div>
+								<div class="txt_footer">contacto@tikitaka.studio</div>
+							</div>
+							<div class="footer_item">
+								<div class="img_footer" id="twitter"></div>
+								<div class="txt_footer">@tikitaka</div>
+							</div>
+							<div class="footer_item">
+								<div class="img_footer" id="location"></div>
+								<div class="txt_footer">Vito Alessio Robles 68, Florida, Benito Juárez, CDMX</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
