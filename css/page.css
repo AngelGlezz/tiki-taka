@@ -429,6 +429,7 @@ a {
 	background-color: #fff;
 	float: right;
 	position: relative;
+	overflow: hidden;
 }
 
 .content_galery {
@@ -438,9 +439,9 @@ a {
 }
 
 .content_info {
-	width: 270px;
-	margin: 140px auto;
-	margin-bottom: 0px;
+	width: 360px;
+	margin-top: 140px;
+	margin-left: 150px;
 }
 
 .content_title {
@@ -641,10 +642,15 @@ a {
 @media screen and (max-width: 1380px) {
 	.content_info {
 		float: right;
+		width: 320px;
 	}
 
-	.slider-nav {
-		width: 70%;
+	.content_title {
+    	width: 116%;
+	}
+
+	.content_galery {
+		width: 93%;
 	}
 }
 
@@ -712,6 +718,10 @@ a {
 
 	#footer_info {
 		width: 73%;
+	}
+
+	.title {
+		font-size: 38px;
 	}
 }
 
