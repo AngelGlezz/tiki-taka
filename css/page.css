@@ -871,10 +871,17 @@ a {
 
 	.content_left, .content_right {
 		width: 100%;
+		height: auto;
 		float: none;
 		padding-top: 30px;
 		min-height: 400px;
-		max-height: 420px;
+		max-height: 720px;
+	}
+
+	.content_right {
+		height: auto;
+		padding-top: 0px;
+		min-height: 800px;
 	}
 
 	.content_galery {
@@ -890,8 +897,9 @@ a {
 		left: 0px;
 		right: 0px;
 		margin: auto;
-		height: 360px;
+		height: auto;
 		width: 250px;
+		margin-top: 30px;
 	}
 
 	.content_title {
@@ -899,7 +907,7 @@ a {
 	}
 
 	.title {
-	    font-size: 60px;
+	    font-size: 54px;
 	}
 
 	.txt_title {
@@ -907,7 +915,7 @@ a {
 	}
 
 	.txt-complement {
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	#footer_info {
