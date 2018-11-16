@@ -8,6 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/page.css">
 		<link rel="stylesheet" type="text/css" href="css/mobMenu.css">
 		<script type="text/javascript" src="js/page.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script src="js/jquery.validate.js"></script>
 		<style>
 			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -27,10 +29,10 @@
 				<div class="ui-block"></div>
 				<div class="top_bar">
 					<div class="item_main tiki_logo_tb"><a href="/tiki-taka/"></a></div>	
-					<div class="item_main"><a href="/tiki-taka/">HOME</a></div>
-					<div class="item_main"><a href="/tiki-taka/index.html#us/">NOSOTROS</a></div>
-					<div class="item_main"><a href="/tiki-taka/index.html#content/">PROYECTOS</a></div>
-					<div class="item_main"><a href="/tiki-taka/index.html#contact/">CONTÁCTANOS</a></div>
+					<div class="item_main"><a href="#">HOME</a></div>
+					<div class="item_main"><a href="/index.html#us/">NOSOTROS</a></div>
+					<div class="item_main"><a href="/index.html#content/">PROYECTOS</a></div>
+					<div class="item_main"><a href="/index.html#contact/">CONTÁCTANOS</a></div>
 				</div>
 				<div id="cover" class="section">
 					<div class="mobile-header">
@@ -85,7 +87,7 @@
 							<div class="line_sep"></div>
 						</div>
 						<div id="content_article">
-							<div class="background_article" id="coca">
+							<div class="background_article sin-margen" id="coca">
 								<a href="section/coca.html">
 									<div class="icon app"></div>
 									<div class="ver">VER</div>
@@ -126,7 +128,7 @@
 										<img src="images/diagonal.png">
 										<div class="article_text_content">
 											<div class="article_title">RETO REXONA</div>
-											<div class="article_subtitle">Plataforma web y social media</div>
+											<div class="article_subtitle">Big Idea - Multiplataforma</div>
 										</div>
 									</div>
 								</a>
@@ -142,7 +144,7 @@
 										<img src="images/diagonal.png">
 										<div class="article_text_content">
 											<div class="article_title">JUAN POPS KELLOGS</div>
-											<div class="article_subtitle">Desarrollo web y branding</div>
+											<div class="article_subtitle">Branded Content</div>
 										</div>
 									</div>
 								</a>
@@ -158,7 +160,7 @@
 										<img src="images/diagonal.png">
 										<div class="article_text_content">
 											<div class="article_title">CHIVAS</div>
-											<div class="article_subtitle">UX, UI de su sitio web</div>
+											<div class="article_subtitle">Diseño de Sitio</div>
 										</div>
 									</div>
 								</a>
@@ -213,7 +215,7 @@
 							</div>
 							<div class="background_article" id="Bostons">
 								<a href="section/bostons.html">
-									<div class="icon branding"></div>
+									<div class="icon web"></div>
 									<div class="ver">VER</div>
 									<div class="image_article">
 										<img src="images/home/Bostons.jpg">
@@ -227,17 +229,17 @@
 									</div>
 								</a>
 							</div>
-							<div class="background_article" id="Corona">
-								<a href="section/Corona.html">
+							<div class="background_article" id="wwe">
+								<a href="section/wwe.html">
 									<div class="icon branding"></div>
 									<div class="ver">VER</div>
 									<div class="image_article">
-										<img src="images/home/Corona.jpg">
+										<img src="images/home/wwe.jpg">
 									</div>
 									<div class="diagonal">
 										<img src="images/diagonal.png">
 										<div class="article_text_content">
-											<div class="article_title">Corona</div>
+											<div class="article_title">WWE</div>
 											<div class="article_subtitle">Desarrollo web y branding</div>
 										</div>
 									</div>
@@ -254,14 +256,14 @@
 										<img src="images/diagonal.png">
 										<div class="article_text_content">
 											<div class="article_title">Patriots</div>
-											<div class="article_subtitle">Desarrollo web y branding</div>
+											<div class="article_subtitle">Consultoría de contenidos</div>
 										</div>
 									</div>
 								</a>
 							</div>
 							<div class="background_article" id="SIS">
 								<a href="section/SIS.html">
-									<div class="icon branding"></div>
+									<div class="icon web"></div>
 									<div class="ver">VER</div>
 									<div class="image_article">
 										<img src="images/home/SIS.jpg">
@@ -284,13 +286,16 @@
 							<div class="creamos_text">CONTÁCTANOS</span></div>
 							<div class="line_sep"></div>
 						</div>
-						<form id="form">
-							<input type="text" name="name" placeholder="*Nombre" class="data" required>
-							<input type="text" name="job" placeholder="*Empresa" class="data" required style="margin-left: 20px;">
-							<input type="mail" name="mail" placeholder="*E-mail" class="data" required>
-							<input type="tel" name="phone" placeholder="*Teléfono" class="data" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="margin-left: 20px;">
-							<textarea name="msj" placeholder="*Mensaje" class="data" id="txtarea" required></textarea>
-							<button type="button" id="button">Enviar</button>
+						<form id="form-tiki-taka" action="../registerUser.php" method="post">
+							<div class="data_div"><input type="text" name="name" placeholder="*Nombre" class="data" required></div>
+							<div class="data_div" style="margin-left: 40px;"><input type="text" name="company" placeholder="*Empresa" class="data" required></div>
+							<div class="data_div"><input type="mail" name="mail" placeholder="*E-mail" class="data" required></div>
+							<div class="data_div" style="margin-left: 40px;"><input type="tel" name="phone" placeholder="*Teléfono" class="data" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></div>
+							<div><textarea name="msj" placeholder="*Mensaje" class="data" id="txtarea" required></textarea></div>
+							<button type="button" id="button-send">Enviar</button>
+							<div id="form-loader" style="text-align: center; margin-top: 10px; display: none;">
+	                            <img style="height: 50px;width: 50px;" src="images/loader.gif">
+	                        </div>
 						</form>
 						<div id="map">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16138.319054601672!2d-99.1897212927966!3d19.351959786249914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff12f89096f%3A0xec6d77250f2b1c5e!2sjuanfutbol!5e0!3m2!1ses!2smx!4v1540838107017" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -316,15 +321,26 @@
 					</div>
 				</div>
 			</div>
+			<div id="boxes">
+		        <div id="dialog" class="window" style="background-color: #f5f5f5;  border-radius: 10px;">
+		            <div style="overflow: auto;margin-bottom: 5px;">
+		                <div><img class="logoNormal" src="/images/logo_mini_ng.png" style="margin: 0px auto;"></div>
+		                <div style="display:none;float: right"><a href="#" class="close"><img style="width: 35px" src="/images/close-btn.png"></a></div>
+		            </div>
+		            <div id="box-msg" style="clear: both;text-align: center;">¡Registro exitoso!</div>
+		            <div class="close" id="ok_btn">Aceptar</div>
+		        </div>
+		        <div id="mask"></div>
+		    </div>
 		</div>
 		<div class="mobile-left">
 			<nav class="mean-nav">
                 <ul>
-                	<li class="main_mobile"><a class="space" href="/tiki-taka/">HOME</a></li>
-                    <li class="main_mobile"><a class="space" href="/tiki-taka/index.html#contact">CONTÁCTANOS</a></li>
-                    <li class="main_mobile"><a class="space" href="/tiki-taka/index.html#us">NOSOTROS</a></li>
-                    <li class="main_mobile"><a class="space" href="/tiki-taka/index.html#content">PROYECTOS</a></li>
-                    <li class="main_mobile"><a class="space index_main" href="/tiki-taka/"></a></li>
+                	<li class="main_mobile"><a class="space" href="#">HOME</a></li>
+                    <li class="main_mobile"><a class="space" href="/index.html#contact">CONTÁCTANOS</a></li>
+                    <li class="main_mobile"><a class="space" href="/index.html#us">NOSOTROS</a></li>
+                    <li class="main_mobile"><a class="space" href="/index.html#content">PROYECTOS</a></li>
+                    <li class="main_mobile"><a class="space index_main" href="#"></a></li>
                 </ul>
             </nav>
 		</div>
