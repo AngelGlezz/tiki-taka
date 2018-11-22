@@ -22,9 +22,6 @@ $(document).ready(function(){
 		})
 	});
 
-	$("#fifa").off('mouseleave');
-	$("#fifa").off('mouseenter');
-
 	$("#form-tiki-taka").validate({
         rules: {
             mail: {
