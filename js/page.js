@@ -1,6 +1,14 @@
+var width = 0;
+var height = 0;
+
+$(window).bind("resize", function(){
+    width = parseInt($(".background_article").css("width"));
+    height = parseInt($(".background_article").css("height"));
+});
+
 $(document).ready(function(){
-  	var width = parseInt($(".background_article").css("width"));
-	var height = parseInt($(".background_article").css("height"));
+  	width = parseInt($(".background_article").css("width"));
+	height = parseInt($(".background_article").css("height"));
 	
 	$(".background_article").mouseenter(function(){
 		var final_width = width-10;
@@ -17,8 +25,8 @@ $(document).ready(function(){
 		$(this).find(".ver").hide();
 		$(this).css({
 			"border": "none",
-			"width": width,
-			"height": height
+			"width": "",
+			"height": ""
 		})
 	});
 
