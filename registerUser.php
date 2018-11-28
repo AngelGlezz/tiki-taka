@@ -1,4 +1,5 @@
 <?php
+    include_once(dirname(__DIR__)."/config.inc.php");
     $return = new stdClass;
         $return->error = '';
 
@@ -20,26 +21,43 @@
                     }
 
                     if($_POST['phone'] != ""){
-                        $phone = $_POST['phone'];
+                        $telephone = $_POST['phone'];
                     }
 
                     if($_POST['msj'] != ""){
-                        $msj = $_POST['msj'];
+                        $message = $_POST['msj'];
                     }
 
                     $mail = $_POST['mail'];
 
-                    $userInfo = array(
+                    /*$userInfo = array(
                         "name"=>$name,
                         "mail"=>$mail,
                         "company"=>$company,
                         "phone"=>$phone,
                         "msj"=>$msj
-                    );
+                    );*/
+
+                    $mysqli = mysqli_init();
+                    if (@$mysqli) {
+                        if (@$mysqli->options(MYSQLI_OPT_CONNECT_TIMEOUT, 5)) {
+                            if (@$mysqli->real_connect($_dbHost, $_dbUser, $_dbPass, $_dbBase, $_dbPort)){
+                                if ($stmt = $mysqli->prepare("INSERT INTO register (name, company, mail, telephone, message) VALUES (?, ?, ?, ?, ?)")){
+                                    $stmt->bind_param("sssssss", $name, $company, $mail, $telephone, $message);
+                                    if (!$stmt->execute()) {
+                                     $return->error = 'Invalid data';
+                                    }else{
+                                        $return->response = "1";
+                                    }
+                                }
+                                $mysqli->close();
+                            }
+                        }
+                    }
 
                     //$support = new connector_EntitySupport();
                     //$result = $support->save($userInfo,"Register");
-                    $return->response = "1";
+                    
                     echo json_encode($return);
                     
                 }

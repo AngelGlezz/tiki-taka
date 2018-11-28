@@ -97,6 +97,32 @@ $(document).ready(function(){
         }
     });
 
+    if(window.location.hash) {
+      var hash = window.location.hash.substring(1); 
+      console.log(hash);
+        if(hash == "us"){
+            var item = $(".top_bar .item_main")[2];
+        }else if(hash == "content"){
+            var item = $(".top_bar .item_main")[3];
+        }else if(hash == "contact"){
+            var item = $(".top_bar .item_main")[4];
+        }
+
+        $('.item_main').css({
+                'border-bottom': '0px'
+            });
+            $('.item_main').find('a').css({
+                'color': '#fff'
+            });
+            $(item).css({
+                'border-bottom': '1px solid #e9c24e'
+            });
+            $(item).find('a').css({
+                'color': '#e9c24e'
+            });
+
+      }
+
 	function showBox(msg){
 	    var id = $('#dialog');
 

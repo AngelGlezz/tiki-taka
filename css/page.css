@@ -65,6 +65,10 @@ a {
 	color: #e9c24e!important;
 }
 
+.tiki_logo_tb:hover {
+	border-bottom: 0px!important;
+}
+
 .tiki_logo_tb {
 	background-image: url(../images/logo_mini_bc.png);
 	background-size: 100% 100%;
@@ -72,10 +76,6 @@ a {
 	background-position: center;
 	width: 80px;
 	height: 30px;
-}
-
-.tiki_logo_tb:hover {
-	border-bottom: 0px!important;
 }
 
 #logo_cover {
