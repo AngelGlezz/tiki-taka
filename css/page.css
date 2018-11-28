@@ -230,6 +230,8 @@ a {
 	color: #fff;
 	text-align: center;
 	line-height: 23px;
+	width: 61%;
+	margin: auto;
 }
 
 #b1 {
@@ -975,6 +977,11 @@ a {
 
 	.txt-complement {
 		font-size: 14px;
+	}
+
+	.bullet {
+		float: none;
+		margin: 15px auto!important;
 	}
 
 	#footer_info {
